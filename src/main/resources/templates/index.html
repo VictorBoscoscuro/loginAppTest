@@ -36,14 +36,11 @@
                 </div>
                 <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i>  Ingresar </button>
             </form>
-            <div class="col-12 forgot">
-                <a href="#">Recordar contrasena?</a>
-            </div>
             <div th:if="${param.error}" class="alert alert-danger" role="alert">
-                Invalid username and password.
+                Revise sus datos
             </div>
             <div th:if="${param.logout}" class="alert alert-success" role="alert">
-                You have been logged out.
+                Deslogueado exitosamente
             </div>
         </div>
     </div>

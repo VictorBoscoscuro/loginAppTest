@@ -1,4 +1,4 @@
-package com.applogin.entity;
+package com.a133beta.entity;
 
 import java.util.Set;
 import javax.persistence.Column;
@@ -10,8 +10,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
-
-import com.applogin.entity.Authority;
 
 @Entity
 public class User {

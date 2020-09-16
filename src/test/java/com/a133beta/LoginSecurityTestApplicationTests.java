@@ -1,4 +1,4 @@
-package com.applogin;
+package com.a133beta;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

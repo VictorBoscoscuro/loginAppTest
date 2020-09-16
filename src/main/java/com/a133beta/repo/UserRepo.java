@@ -1,6 +1,6 @@
-package com.applogin.repo;
+package com.a133beta.repo;
 
-import com.applogin.entity.User;
+import com.a133beta.entity.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

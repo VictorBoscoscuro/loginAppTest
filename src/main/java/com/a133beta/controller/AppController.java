@@ -1,4 +1,4 @@
-package com.applogin.controller;
+package com.a133beta.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,13 +16,13 @@ public class AppController {
         return "menu";
     }
 
-    @GetMapping("/user")
-    public String user() {
-        return "user";
+    @GetMapping("/system")
+    public String system() {
+        return "system";
     }
 
-    @GetMapping("/admin")
-    public String admin() {
-        return "admin";
+    @GetMapping("/userman")
+    public String userman() {
+        return "userman";
     }
 }

@@ -1,4 +1,4 @@
-package com.applogin.entity;
+package com.a133beta.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

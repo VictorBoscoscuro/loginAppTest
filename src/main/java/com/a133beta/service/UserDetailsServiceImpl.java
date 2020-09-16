@@ -1,4 +1,4 @@
-package com.applogin.service;
+package com.a133beta.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,8 +12,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.applogin.entity.Authority;
-import com.applogin.repo.UserRepo;
+import com.a133beta.entity.Authority;
+import com.a133beta.repo.UserRepo;
 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
@@ -25,7 +25,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
         //Buscar el usuario con el repositorio y si no existe lanzar una exepcion
-        com.applogin.entity.User appUser =
+        com.a133beta.entity.User appUser =
                 userRepo.findByUsername(username).orElseThrow(() -> new UsernameNotFoundException("No existe usuario"));
 
         //Mapear nuestra lista de Authority con la de spring security

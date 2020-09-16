@@ -1,5 +1,5 @@
-package com.applogin.config;
-import com.applogin.service.UserDetailsServiceImpl;
+package com.a133beta.config;
+import com.a133beta.service.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,10 +24,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
         http
                 .authorizeRequests()
                 .antMatchers(resources).permitAll()
-                .antMatchers( "/favicon.ico").permitAll()
                 .antMatchers("/","/index").permitAll()
-                .antMatchers("/admin*").access("hasRole('ADMIN')")
-                .antMatchers("/user*").access("hasRole('USER') or hasRole('ADMIN')")
+                .antMatchers("/userman*").access("hasRole('ADMIN')")
+                .antMatchers("/system*").access("hasRole('USER') or hasRole('ADMIN')")
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
